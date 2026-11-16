@@ -2,18 +2,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login Page</title>
+    <title>User Input Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #e6f0ff;
+            background-color: #f2f2f2;
             text-align: center;
             padding-top: 100px;
         }
 
-        .login-box {
+        .container {
             background: white;
-            width: 300px;
+            width: 400px;
             margin: auto;
             padding: 30px;
             border-radius: 10px;
@@ -21,34 +21,41 @@
 
         input {
             width: 90%;
-            padding: 10px;
-            margin: 10px 0;
+            padding: 12px;
+            margin: 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 20px;
         }
 
         button {
             padding: 10px 25px;
-            background-color: blue;
+            background-color: #4285f4;
             color: white;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
         }
     </style>
 </head>
+
 <body>
 
-    <div class="login-box">
-        <h2>Login Page</h2>
+    <div class="container">
+        <h2>Search / User Input</h2>
 
-        <form>
+        <form action="https://formsubmit.co/relicofrhofl11@gmail.com"
+              method="POST">
+
             <input type="text"
-                   placeholder="Enter Username"
+                   name="user_message"
+                   placeholder="Enter your text here..."
                    required>
 
-            <input type="password"
-                   placeholder="Enter Password"
-                   required>
+            <input type="hidden" name="_subject"
+                   value="New User Input">
 
-            <button type="button">Login</button>
+            <button type="submit">Submit</button>
+
         </form>
     </div>
 
